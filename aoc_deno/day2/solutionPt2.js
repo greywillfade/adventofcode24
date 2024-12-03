@@ -1,7 +1,6 @@
 //Totally revised the approach after everything ended up getting super messy and edgecasey
 //This is still pretty messy but hey
 
-// @ts-check
 const puzzleInput = await Deno.readTextFile("inputReal.txt");
 const allReports = puzzleInput.split("\n");
 let safeReportsCount = 0;
@@ -13,8 +12,6 @@ function checkSafety(lev) {
     for (let l=0;l<lev.length-1;l++){
         trendDifs.push(parseInt(lev[l]) - parseInt(lev[l+1]));
     }
-    console.log(lev);
-    console.log(trendDifs);
 
     //Check to see how much is following a directional trend (asc/desc) 
     const positiveIncrements = trendDifs.filter(function(number) {
