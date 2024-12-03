@@ -4,4 +4,4 @@ As always this repo is for me to mess around in rather than anyone else to peer 
 I'm intending to try out some of the features of Deno this year.
 Reminder to myself:
 
-To run a file call `$ deno nameoffile.js`
+To run (inc. local file read) call `$ deno --allow-read nameoffile.js` 
