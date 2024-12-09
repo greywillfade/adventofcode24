@@ -1,4 +1,4 @@
-const puzzleInput = await Deno.readTextFile("inputTest.txt");
+const puzzleInput = await Deno.readTextFile("inputReal.txt");
 let xmasCount: number = 0;
 const patterns: string[] = ["XMAS", "SAMX"];
 
