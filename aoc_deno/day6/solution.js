@@ -2,7 +2,7 @@ import { distinct } from "@std/collections";
 
 const puzzleInput = await Deno.readTextFile("inputReal.txt");
 const inputToUse = puzzleInput.split("\n");
-let visitedPos = [];
+const visitedPos = [];
 
 //Creates a struture with arrays for rows, e.g.
 /*
